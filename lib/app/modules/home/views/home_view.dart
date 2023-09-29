@@ -6,6 +6,7 @@ import 'package:flutter_crud_firebase/app/utils/app_color.dart';
 import 'package:flutter_crud_firebase/app/widgets/custom_input.dart';
 import 'package:get/get.dart';
 
+//hello
 String tglPencarian = "";
 String logNama = "";
 String logJabatan = "";
