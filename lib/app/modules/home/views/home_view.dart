@@ -318,10 +318,20 @@ class HomeView extends GetView<HomeController> {
                                                     style:
                                                         TextStyle(fontSize: 12),
                                                   ),
-                                                  Text(
-                                                    "${todoData["kegiatan"]}",
-                                                    style:
-                                                        TextStyle(fontSize: 12),
+                                                  SizedBox(
+                                                    width: 220.0,
+                                                    child: Text(
+                                                      "${todoData["kegiatan"]}",
+                                                      maxLines: 10,
+                                                      overflow:
+                                                          TextOverflow.ellipsis,
+                                                      softWrap: false,
+                                                      style: TextStyle(
+                                                          color: Colors.black,
+                                                          fontWeight:
+                                                              FontWeight.normal,
+                                                          fontSize: 12.0),
+                                                    ),
                                                   ),
                                                 ],
                                               ),

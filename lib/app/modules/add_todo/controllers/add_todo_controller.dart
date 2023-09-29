@@ -29,6 +29,7 @@ class AddTodoController extends GetxController {
 // foto
 
   TextEditingController tanggalC = TextEditingController();
+  TextEditingController jamAwalC = TextEditingController();
   TextEditingController waktuC = TextEditingController();
   TextEditingController nama_dudiC = TextEditingController();
   TextEditingController alamat_dudiC = TextEditingController();
@@ -125,13 +126,18 @@ class AddTodoController extends GetxController {
           await firebaseStorage.ref().child('images/$upDir').putFile(file!);
       var downloadUrl = await snapshot.ref.getDownloadURL();
 
+      var dates = DateFormat('yyyy-MM-dd').format(DateTime.now());
       await childrenCollection.doc(uuidTodo).set({
         "task_id": uuidTodo,
         "tanggal": tanggalC.text,
         "waktu": waktuC.text,
-        "jam_awal": DateFormat('hh:mm').format(DateTime.now()),
+        //"jam_awal": DateFormat('hh:mm').format(DateTime.now()),
+        "jam_awal": jamAwalC.text,
         "jam_akhir": DateFormat('hh:mm').format(
-            DateTime.now().add(Duration(minutes: int.parse(waktuC.text)))),
+            DateTime.parse("$dates ${jamAwalC.text}")
+                .add(Duration(minutes: int.parse(waktuC.text)))),
+        // "jam_akhir": DateFormat('hh:mm').format(
+        //     DateTime.now().add(Duration(minutes: int.parse(waktuC.text)))),
         "nama_dudi": nama_dudiC.text,
         "alamat_dudi": alamat_dudiC.text,
         "jml_siswa": jml_siswaC.text,

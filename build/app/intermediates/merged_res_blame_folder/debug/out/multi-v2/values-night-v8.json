@@ -4,7 +4,7 @@
             "outputFile": "com.example.flutter_crud_firebase.app-mergeDebugResources-13:/values-night-v8/values-night-v8.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\SkanawaRPL\\Documents\\bagus\\belajar_flutter\\todolist_app_flutter\\android\\app\\src\\main\\res\\values-night\\styles.xml",
+                    "source": "C:\\Users\\SkanawaRPL\\Documents\\bagus\\belajar_flutter\\simon_firebase\\android\\app\\src\\main\\res\\values-night\\styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",

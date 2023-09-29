@@ -11,6 +11,7 @@ import 'package:intl/intl.dart';
 import 'package:pdf/pdf.dart';
 import 'package:pdf/widgets.dart' as pw;
 import 'package:printing/printing.dart';
+import 'package:pdf/src/widgets/text_style.dart';
 
 class AllTodoController extends GetxController {
   //TODO: Implement AllTodoController
@@ -186,28 +187,31 @@ class AllTodoController extends GetxController {
                       'Pada hari ini ${tampilHari()} tanggal ${tampilKataTgl("dd")} bulan ${tampilKataTgl("mm")} tahun ${tampilKataTgl("yy")}'),
                   pw.Text('Nama       : $logNama'),
                   pw.Text('Jabatan    : $logJabatan'),
-                  pw.Text('Instansi   : $logInstansi'),
+                  pw.Text('Instansi    : $logInstansi'),
                   pw.SizedBox(height: 20),
                   pw.Text(
                       'Telah melaksanakan tugas sesuai dengan Surat Tugas No : ......................................... dari Kepala $logInstansi'),
                   pw.SizedBox(height: 20),
                   pw.Text('Tugas dilaksanakan pada : '),
-                  pw.Text('Hari : ${tampilHari()} s/d ${tampilHari()} '),
                   pw.Text(
-                      'Tanggal : ${tampilKataTgl("dd")} ${tampilKataTgl("mm")} ${tampilKataTgl("yy")} s/d ${tampilKataTgl("dd")} ${tampilKataTgl("mm")} ${tampilKataTgl("yy")} '),
-                  pw.Text('Waktu : .... s/d .....'),
-                  pw.Text('Nama Dudi : .... '),
-                  pw.Text('Alamat Dudi : .... '),
-                  pw.Text('Jumlah Siswa : .... Orang'),
+                      'Hari                 : ${tampilHari()} s/d ${tampilHari()} '),
+                  pw.Text(
+                      'Tanggal          : ${tampilKataTgl("dd")} ${tampilKataTgl("mm")} ${tampilKataTgl("yy")} s/d ${tampilKataTgl("dd")} ${tampilKataTgl("mm")} ${tampilKataTgl("yy")} '),
+                  pw.Text(
+                      'Waktu             : ${todoData["jam_awal"]} s/d ${todoData["jam_akhir"]}'),
+                  pw.Text('Nama Dudi     : ${todoData["nama_dudi"]} '),
+                  pw.Text('Alamat Dudi    : ${todoData["alamat_dudi"]} '),
+                  pw.Text('Jumlah Siswa : ${todoData["jml_siswa"]} Orang'),
                   pw.SizedBox(height: 20),
                   pw.Text('Dengan hasil sebagai berikut : '),
-                  pw.Text('..............................'),
-                  pw.Text(
-                      'Demikian Berita Acara Laporan Pelaksanaan Tugas ini saya buat dengan sebenarnya sebagai pertanggung jawaban saya selama melaksanakan tugas.'),
+                  pw.Text('${todoData["kegiatan"]} '),
                   pw.SizedBox(height: 20),
                   pw.Text(
+                      'Demikian Berita Acara Laporan Pelaksanaan Tugas ini saya buat dengan sebenarnya sebagai pertanggung jawaban saya selama melaksanakan tugas.'),
+                  pw.SizedBox(height: 30),
+                  pw.Text(
                       '                                                                   Yang Membuat Berita Acara'),
-                  pw.SizedBox(height: 80),
+                  pw.SizedBox(height: 70),
                   pw.Text(
                       '                                                                   $logNama'),
                   pw.Text(

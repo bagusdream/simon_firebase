@@ -9,6 +9,7 @@ class CameraView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: CameraCamera(
+        resolutionPreset: ResolutionPreset.medium,
         onFile: (file) => Get.back(result: file),
       ),
     );

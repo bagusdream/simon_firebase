@@ -50,9 +50,15 @@ class AddTodoView extends GetView<AddTodoController> {
             disabled: true,
           ),
           CustomInput(
+            controller: controller.jamAwalC,
+            label: 'Jam Awal Monitoring',
+            hint: '10:10',
+            isTime: true,
+          ),
+          CustomInput(
             controller: controller.waktuC,
             label: 'Waktu',
-            hint: '10',
+            hint: 'Lama Waktu Monitoring (Menit)',
             isNumber: true,
           ),
           CustomInput(
@@ -68,7 +74,7 @@ class AddTodoView extends GetView<AddTodoController> {
           CustomInput(
             controller: controller.jml_siswaC,
             label: 'Jumlah Siswa',
-            hint: '2',
+            hint: 'Jumlah Siswa Magang',
             isNumber: true,
           ),
           CustomInput(
@@ -87,7 +93,7 @@ class AddTodoView extends GetView<AddTodoController> {
           //   hint: 'Foto Kegiatan',
           // ),
           (controller.file != null)
-              ? Image.file(controller.file!)
+              ? Image.file(controller.file!, height: 300)
               : const SizedBox(),
           const SizedBox(
             height: 16,

@@ -71,7 +71,7 @@ class RegisterView extends GetView<RegisterController> {
             ),
           ),
           Container(
-            height: MediaQuery.of(context).size.height * 75 / 100,
+            height: MediaQuery.of(context).size.height * 90 / 100,
             width: MediaQuery.of(context).size.width,
             color: Colors.white,
             padding: EdgeInsets.only(left: 20, right: 20, top: 36, bottom: 84),
@@ -263,7 +263,7 @@ class RegisterView extends GetView<RegisterController> {
                       Container(
                         width: MediaQuery.of(context).size.width,
                         padding: EdgeInsets.only(left: 14, right: 14, top: 4),
-                        margin: EdgeInsets.only(bottom: 1),
+                        margin: EdgeInsets.only(bottom: 16),
                         decoration: BoxDecoration(
                           color: Colors.white,
                           borderRadius: BorderRadius.circular(8),
@@ -285,6 +285,40 @@ class RegisterView extends GetView<RegisterController> {
                             floatingLabelBehavior: FloatingLabelBehavior.always,
                             border: InputBorder.none,
                             hintText: "jabatan anda",
+                            hintStyle: TextStyle(
+                              fontSize: 14,
+                              fontFamily: 'poppins',
+                              fontWeight: FontWeight.w500,
+                              color: AppColor.secondarySoft,
+                            ),
+                          ),
+                        ),
+                      ),
+                      Container(
+                        width: MediaQuery.of(context).size.width,
+                        padding: EdgeInsets.only(left: 14, right: 14, top: 4),
+                        margin: EdgeInsets.only(bottom: 1),
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(8),
+                          border: Border.all(
+                              width: 1, color: AppColor.secondaryExtraSoft),
+                        ),
+                        child: TextField(
+                          style: TextStyle(fontSize: 14, fontFamily: 'poppins'),
+                          maxLines: 1,
+                          controller: controller.instansiC,
+                          decoration: InputDecoration(
+                            label: Text(
+                              "Instansi Anda",
+                              style: TextStyle(
+                                color: AppColor.secondarySoft,
+                                fontSize: 14,
+                              ),
+                            ),
+                            floatingLabelBehavior: FloatingLabelBehavior.always,
+                            border: InputBorder.none,
+                            hintText: "instansi anda",
                             hintStyle: TextStyle(
                               fontSize: 14,
                               fontFamily: 'poppins',

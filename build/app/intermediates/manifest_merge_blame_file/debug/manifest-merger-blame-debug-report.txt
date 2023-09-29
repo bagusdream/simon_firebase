@@ -13,29 +13,29 @@
 13         to allow setting breakpoints, to provide hot reload, etc.
 14    -->
 15    <uses-permission android:name="android.permission.INTERNET" />
-15-->C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\todolist_app_flutter\android\app\src\debug\AndroidManifest.xml:6:5-66
-15-->C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\todolist_app_flutter\android\app\src\debug\AndroidManifest.xml:6:22-64
+15-->C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\android\app\src\debug\AndroidManifest.xml:6:5-66
+15-->C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\android\app\src\debug\AndroidManifest.xml:6:22-64
 16    <uses-permission android:name="android.permission.CAMERA" />
-16-->[:camera_android] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\todolist_app_flutter\build\camera_android\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-65
-16-->[:camera_android] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\todolist_app_flutter\build\camera_android\intermediates\merged_manifest\debug\AndroidManifest.xml:9:22-62
+16-->[:camera_android] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\build\camera_android\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-65
+16-->[:camera_android] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\build\camera_android\intermediates\merged_manifest\debug\AndroidManifest.xml:9:22-62
 17    <uses-permission android:name="android.permission.RECORD_AUDIO" />
-17-->[:camera_android] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\todolist_app_flutter\build\camera_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:5-71
-17-->[:camera_android] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\todolist_app_flutter\build\camera_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:22-68
+17-->[:camera_android] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\build\camera_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:5-71
+17-->[:camera_android] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\build\camera_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:22-68
 18    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-18-->[:file_picker] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\todolist_app_flutter\build\file_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-80
-18-->[:file_picker] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\todolist_app_flutter\build\file_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:9:22-77
+18-->[:file_picker] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\build\file_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-80
+18-->[:file_picker] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\build\file_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:9:22-77
 19
 20    <queries>
-20-->[:file_picker] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\todolist_app_flutter\build\file_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:11:5-17:15
+20-->[:file_picker] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\build\file_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:11:5-17:15
 21        <intent>
-21-->[:file_picker] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\todolist_app_flutter\build\file_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:12:9-16:18
+21-->[:file_picker] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\build\file_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:12:9-16:18
 22            <action android:name="android.intent.action.GET_CONTENT" />
-22-->[:file_picker] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\todolist_app_flutter\build\file_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-72
-22-->[:file_picker] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\todolist_app_flutter\build\file_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:13:21-69
+22-->[:file_picker] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\build\file_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-72
+22-->[:file_picker] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\build\file_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:13:21-69
 23
 24            <data android:mimeType="*/*" />
-24-->[:file_picker] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\todolist_app_flutter\build\file_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-44
-24-->[:file_picker] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\todolist_app_flutter\build\file_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:15:19-41
+24-->[:file_picker] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\build\file_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-44
+24-->[:file_picker] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\build\file_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:15:19-41
 25        </intent>
 26    </queries>
 27
@@ -49,7 +49,7 @@
 32-->[androidx.core:core:1.6.0] C:\Users\SkanawaRPL\.gradle\caches\transforms-3\7e9df2ac2213a6bd3cef0f2f27870d79\transformed\core-1.6.0\AndroidManifest.xml:24:18-86
 33        android:debuggable="true"
 34        android:icon="@mipmap/ic_launcher"
-35        android:label="flutter_crud_firebase" >
+35        android:label="SiMon PKL" >
 36        <activity
 37            android:name="com.example.flutter_crud_firebase.MainActivity"
 38            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
@@ -84,37 +84,37 @@
 67            android:value="2" />
 68
 69        <service
-69-->[:firebase_auth] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\todolist_app_flutter\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-14:19
+69-->[:firebase_auth] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-14:19
 70            android:name="com.google.firebase.components.ComponentDiscoveryService"
-70-->[:firebase_auth] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\todolist_app_flutter\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:10:18-89
+70-->[:firebase_auth] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:10:18-89
 71            android:directBootAware="true"
 71-->[com.google.firebase:firebase-common:20.3.3] C:\Users\SkanawaRPL\.gradle\caches\transforms-3\6f9fa5902813f78de2aefcdfcdb180f7\transformed\jetified-firebase-common-20.3.3\AndroidManifest.xml:34:13-43
 72            android:exported="false" >
 72-->[com.google.firebase:firebase-auth:22.1.1] C:\Users\SkanawaRPL\.gradle\caches\transforms-3\cee3cf3ba75e91d924cf662095a78242\transformed\jetified-firebase-auth-22.1.1\AndroidManifest.xml:68:13-37
 73            <meta-data
-73-->[:firebase_auth] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\todolist_app_flutter\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
+73-->[:firebase_auth] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
 74                android:name="com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar"
-74-->[:firebase_auth] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\todolist_app_flutter\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-124
+74-->[:firebase_auth] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-124
 75                android:value="com.google.firebase.components.ComponentRegistrar" />
-75-->[:firebase_auth] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\todolist_app_flutter\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
+75-->[:firebase_auth] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
 76            <meta-data
-76-->[:firebase_storage] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\todolist_app_flutter\build\firebase_storage\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
+76-->[:firebase_storage] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\build\firebase_storage\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
 77                android:name="com.google.firebase.components:io.flutter.plugins.firebase.storage.FlutterFirebaseAppRegistrar"
-77-->[:firebase_storage] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\todolist_app_flutter\build\firebase_storage\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-126
+77-->[:firebase_storage] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\build\firebase_storage\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-126
 78                android:value="com.google.firebase.components.ComponentRegistrar" />
-78-->[:firebase_storage] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\todolist_app_flutter\build\firebase_storage\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
+78-->[:firebase_storage] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\build\firebase_storage\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
 79            <meta-data
-79-->[:cloud_firestore] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\todolist_app_flutter\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
+79-->[:cloud_firestore] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
 80                android:name="com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar"
-80-->[:cloud_firestore] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\todolist_app_flutter\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-134
+80-->[:cloud_firestore] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-134
 81                android:value="com.google.firebase.components.ComponentRegistrar" />
-81-->[:cloud_firestore] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\todolist_app_flutter\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
+81-->[:cloud_firestore] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
 82            <meta-data
-82-->[:firebase_core] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\todolist_app_flutter\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
+82-->[:firebase_core] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
 83                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
-83-->[:firebase_core] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\todolist_app_flutter\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-124
+83-->[:firebase_core] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-124
 84                android:value="com.google.firebase.components.ComponentRegistrar" />
-84-->[:firebase_core] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\todolist_app_flutter\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
+84-->[:firebase_core] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
 85            <meta-data
 85-->[com.google.firebase:firebase-auth:22.1.1] C:\Users\SkanawaRPL\.gradle\caches\transforms-3\cee3cf3ba75e91d924cf662095a78242\transformed\jetified-firebase-auth-22.1.1\AndroidManifest.xml:69:13-71:85
 86                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
@@ -136,21 +136,21 @@
 94        </service>
 95
 96        <provider
-96-->[:printing] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\todolist_app_flutter\build\printing\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-18:20
+96-->[:printing] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\build\printing\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-18:20
 97            android:name="net.nfet.flutter.printing.PrintFileProvider"
-97-->[:printing] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\todolist_app_flutter\build\printing\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-71
+97-->[:printing] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\build\printing\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-71
 98            android:authorities="com.example.flutter_crud_firebase.flutter.printing"
-98-->[:printing] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\todolist_app_flutter\build\printing\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-68
+98-->[:printing] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\build\printing\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-68
 99            android:exported="false"
-99-->[:printing] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\todolist_app_flutter\build\printing\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-37
+99-->[:printing] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\build\printing\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-37
 100            android:grantUriPermissions="true" >
-100-->[:printing] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\todolist_app_flutter\build\printing\intermediates\merged_manifest\debug\AndroidManifest.xml:14:13-47
+100-->[:printing] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\build\printing\intermediates\merged_manifest\debug\AndroidManifest.xml:14:13-47
 101            <meta-data
-101-->[:printing] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\todolist_app_flutter\build\printing\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-17:71
+101-->[:printing] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\build\printing\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-17:71
 102                android:name="android.support.FILE_PROVIDER_PATHS"
-102-->[:printing] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\todolist_app_flutter\build\printing\intermediates\merged_manifest\debug\AndroidManifest.xml:16:17-67
+102-->[:printing] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\build\printing\intermediates\merged_manifest\debug\AndroidManifest.xml:16:17-67
 103                android:resource="@xml/flutter_printing_file_paths" />
-103-->[:printing] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\todolist_app_flutter\build\printing\intermediates\merged_manifest\debug\AndroidManifest.xml:17:17-68
+103-->[:printing] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\build\printing\intermediates\merged_manifest\debug\AndroidManifest.xml:17:17-68
 104        </provider>
 105
 106        <activity
@@ -179,7 +179,7 @@
 116-->[com.google.firebase:firebase-auth:22.1.1] C:\Users\SkanawaRPL\.gradle\caches\transforms-3\cee3cf3ba75e91d924cf662095a78242\transformed\jetified-firebase-auth-22.1.1\AndroidManifest.xml:39:27-75
 117
 118                <data
-118-->[:file_picker] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\todolist_app_flutter\build\file_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-44
+118-->[:file_picker] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\build\file_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-44
 119                    android:host="firebase.auth"
 120                    android:path="/"
 121                    android:scheme="genericidp" />
@@ -211,7 +211,7 @@
 134-->[com.google.firebase:firebase-auth:22.1.1] C:\Users\SkanawaRPL\.gradle\caches\transforms-3\cee3cf3ba75e91d924cf662095a78242\transformed\jetified-firebase-auth-22.1.1\AndroidManifest.xml:39:27-75
 135
 136                <data
-136-->[:file_picker] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\todolist_app_flutter\build\file_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-44
+136-->[:file_picker] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\build\file_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-44
 137                    android:host="firebase.auth"
 138                    android:path="/"
 139                    android:scheme="recaptcha" />

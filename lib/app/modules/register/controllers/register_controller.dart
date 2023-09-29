@@ -13,6 +13,7 @@ class RegisterController extends GetxController {
   TextEditingController passC = TextEditingController();
   TextEditingController nipC = TextEditingController();
   TextEditingController jabatanC = TextEditingController();
+  TextEditingController instansiC = TextEditingController();
 
   FirebaseAuth auth = FirebaseAuth.instance;
   FirebaseFirestore firestore = FirebaseFirestore.instance;
@@ -41,8 +42,9 @@ class RegisterController extends GetxController {
             "user_id": uid,
             "name": nameC.text,
             "email": emailC.text.trim(),
-            "nip" : nipC.text,
-            "jabatan" : jabatanC.text,
+            "nip": nipC.text,
+            "jabatan": jabatanC.text,
+            "instansi": instansiC.text,
             "created_at": DateTime.now().toIso8601String(),
           });
 
