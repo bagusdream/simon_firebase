@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "88881267792",
+    "project_id": "todolist-app-47bef",
+    "storage_bucket": "todolist-app-47bef.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:88881267792:android:11a200d7ed708921157d55",
+        "android_client_info": {
+          "package_name": "com.example.belajar_firebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUHUzjaoRrxWs2t9BWiD1qjX7fpJVG0J8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:88881267792:android:4fe0b82870ed8beb157d55",
+        "android_client_info": {
+          "package_name": "com.example.flutter_crud_firebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUHUzjaoRrxWs2t9BWiD1qjX7fpJVG0J8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
