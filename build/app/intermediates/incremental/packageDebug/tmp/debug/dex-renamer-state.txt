@@ -1,4 +1,4 @@
-#Fri Sep 29 22:46:48 WIB 2023
+#Sat Sep 30 08:21:36 WIB 2023
 base.0=C\:\\Users\\SkanawaRPL\\Documents\\bagus\\belajar_flutter\\simon_firebase\\build\\app\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 base.1=C\:\\Users\\SkanawaRPL\\Documents\\bagus\\belajar_flutter\\simon_firebase\\build\\app\\intermediates\\dex\\debug\\mergeLibDexDebug\\0\\classes.dex
 base.2=C\:\\Users\\SkanawaRPL\\Documents\\bagus\\belajar_flutter\\simon_firebase\\build\\app\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex

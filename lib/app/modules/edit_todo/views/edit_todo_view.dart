@@ -48,10 +48,21 @@ class EditTodoView extends GetView<EditTodoController> {
             isDate: true,
           ),
           CustomInput(
+            controller: controller.jam_awalC,
+            label: 'Jam Awal Monitoring',
+            hint: 'Jam Awal Monitoring',
+            isTime: true,
+          ),
+          CustomInput(
             controller: controller.waktuC,
             label: 'Waktu',
-            hint: '10',
+            hint: 'Masukkan Lama Monitoring (Menit)',
             isNumber: true,
+          ),
+          CustomInput(
+            controller: controller.no_suratC,
+            label: 'Nomor Surat Tugas',
+            hint: 'Masukkan Nomor Surat Tugas',
           ),
           CustomInput(
             controller: controller.nama_dudiC,
@@ -73,6 +84,7 @@ class EditTodoView extends GetView<EditTodoController> {
             controller: controller.kegiatanC,
             label: 'Kegiatan',
             hint: 'Kegiatan Monitoring Dudi',
+            maxLine: 5,
           ),
           CustomInput(
             controller: controller.keteranganC,

@@ -62,7 +62,7 @@ class LoginView extends GetView<LoginController> {
             ),
           ),
           Container(
-            height: MediaQuery.of(context).size.height * 65 / 100,
+            height: MediaQuery.of(context).size.height * 57 / 100,
             width: MediaQuery.of(context).size.width,
             color: Colors.white,
             padding: EdgeInsets.only(left: 20, right: 20, top: 36, bottom: 84),
@@ -227,6 +227,40 @@ class LoginView extends GetView<LoginController> {
                 ),
               ],
             ),
+          ),
+          Row(
+            children: [
+              Align(
+                alignment: Alignment.bottomLeft,
+                child: Padding(
+                  padding: const EdgeInsets.all(20),
+                  child: InkWell(
+                    onTap: () {},
+                    child: const Text(
+                      'Bagus - Henry @2023',
+                      style: TextStyle(color: Colors.white, fontSize: 14),
+                    ),
+                  ),
+                ),
+              ),
+              Align(
+                alignment: Alignment.bottomCenter,
+                child: SizedBox(width: 120),
+              ),
+              Align(
+                alignment: Alignment.bottomRight,
+                child: Padding(
+                  padding: const EdgeInsets.all(20),
+                  child: InkWell(
+                    onTap: () {},
+                    child: const Text(
+                      'Informasi',
+                      style: TextStyle(color: Colors.white, fontSize: 14),
+                    ),
+                  ),
+                ),
+              ),
+            ],
           ),
         ],
       ),

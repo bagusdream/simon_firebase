@@ -16,7 +16,9 @@ class DetailTodoController extends GetxController {
   RxBool isLoadingCreateTodo = false.obs;
 
   TextEditingController tanggalC = TextEditingController();
+  TextEditingController jamAwalC = TextEditingController();
   TextEditingController waktuC = TextEditingController();
+  TextEditingController no_suratC = TextEditingController();
   TextEditingController nama_dudiC = TextEditingController();
   TextEditingController alamat_dudiC = TextEditingController();
   TextEditingController jml_siswaC = TextEditingController();
@@ -38,7 +40,9 @@ class DetailTodoController extends GetxController {
   void onInit() {
     super.onInit();
     tanggalC.text = argsData["tanggal"];
+    jamAwalC.text = argsData["jam_awal"];
     waktuC.text = argsData["waktu"];
+    no_suratC.text = argsData["no_surat"];
     nama_dudiC.text = argsData["nama_dudi"];
     alamat_dudiC.text = argsData["alamat_dudi"];
     jml_siswaC.text = argsData["jml_siswa"];

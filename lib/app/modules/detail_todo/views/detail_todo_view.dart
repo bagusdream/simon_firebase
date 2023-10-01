@@ -62,10 +62,23 @@ class DetailTodoView extends GetView<DetailTodoController> {
             disabled: true,
           ),
           CustomInput(
+            controller: controller.jamAwalC,
+            label: 'Jam Awal Monitoring',
+            hint: 'Jam Awal Monitoring',
+            isTime: true,
+            disabled: true,
+          ),
+          CustomInput(
             controller: controller.waktuC,
             label: 'Waktu',
-            hint: '10',
+            hint: 'Masukkan Lama Monitoring (Menit)',
             isNumber: true,
+            disabled: true,
+          ),
+          CustomInput(
+            controller: controller.no_suratC,
+            label: 'Nomor Surat Tugas',
+            hint: 'Masukkan Nomor Surat Tugas',
             disabled: true,
           ),
           CustomInput(
@@ -92,6 +105,7 @@ class DetailTodoView extends GetView<DetailTodoController> {
             label: 'Kegiatan',
             hint: 'Kegiatan Monitoring Dudi',
             disabled: true,
+            maxLine: 5,
           ),
           CustomInput(
             controller: controller.keteranganC,

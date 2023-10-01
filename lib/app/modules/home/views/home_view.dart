@@ -65,7 +65,7 @@ class HomeView extends GetView<HomeController> {
                                   Text(
                                     "Selamat datang kembali",
                                     style: TextStyle(
-                                      fontSize: 12,
+                                      fontSize: 14,
                                       color: AppColor.secondarySoft,
                                     ),
                                   ),
@@ -83,7 +83,14 @@ class HomeView extends GetView<HomeController> {
                           ),
                           InkWell(
                             onTap: () => {controller.logout()},
-                            child: Text("Logout"),
+                            child: Row(
+                              children: [
+                                Text("Logout ",
+                                    style: TextStyle(color: Colors.red)),
+                                Icon(Icons.logout, color: Colors.red),
+                              ],
+                            ),
+                            splashColor: Colors.yellow,
                           ),
                         ],
                       ),
@@ -134,7 +141,7 @@ class HomeView extends GetView<HomeController> {
                                       vertical: 16,
                                     ),
                                     decoration: BoxDecoration(
-                                      color: AppColor.primarySoft,
+                                      color: Colors.white,
                                       borderRadius: BorderRadius.circular(8),
                                     ),
                                     child: Row(
@@ -148,17 +155,17 @@ class HomeView extends GetView<HomeController> {
                                                 child: Text(
                                                   "Jumlah Monitoring PKL",
                                                   style: TextStyle(
-                                                    fontSize: 12,
-                                                    color: Colors.white,
+                                                    fontSize: 13,
+                                                    color: Colors.indigo,
                                                   ),
                                                 ),
                                               ),
                                               Text(
                                                 "${todoLengthData.toString()}",
                                                 style: TextStyle(
-                                                  fontSize: 16,
+                                                  fontSize: 18,
                                                   fontWeight: FontWeight.w700,
-                                                  color: Colors.white,
+                                                  color: Colors.indigo,
                                                 ),
                                               ),
                                             ],
@@ -175,9 +182,21 @@ class HomeView extends GetView<HomeController> {
                         }
                       },
                     ),
-                    SizedBox(
-                      height: 14,
+                    SizedBox(height: 40),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          "Data Monitoring",
+                          style: TextStyle(
+                            fontFamily: "poppins",
+                            fontWeight: FontWeight.w600,
+                            fontSize: 16,
+                          ),
+                        ),
+                      ],
                     ),
+                    SizedBox(height: 20),
                     Container(
                       child: Column(
                         children: [
@@ -185,9 +204,11 @@ class HomeView extends GetView<HomeController> {
                             children: [
                               Container(
                                 width: 200,
+                                //height: 60,
                                 child: CustomInput(
                                   controller: controller.tanggalC,
-                                  label: 'Tanggal',
+                                  label: 'Cari di Tanggal :',
+                                  //label: '',
                                   hint: DateTime.now().toString(),
                                   isDate: true,
                                   disabled: true,
@@ -195,42 +216,35 @@ class HomeView extends GetView<HomeController> {
                                 ),
                               ),
                               SizedBox(width: 10),
-                              ElevatedButton(
-                                onPressed: () {
-                                  tglPencarian = controller.tanggalC.text;
-                                  Get.toNamed(Routes.ALL_TODO);
-                                  print(tglPencarian);
-                                },
-                                child: Icon(Icons.search), //btnCari
+                              Container(
+                                height: 42,
+                                child: ElevatedButton(
+                                  onPressed: () {
+                                    tglPencarian = controller.tanggalC.text;
+                                    Get.toNamed(Routes.ALL_TODO);
+                                    print(tglPencarian);
+                                  },
+                                  child: Icon(Icons.search), //btnCari
+                                ),
                               ),
                               SizedBox(width: 10),
-                              ElevatedButton(
-                                onPressed: () => {
-                                  tglPencarian = "",
-                                  Get.toNamed(Routes.ALL_TODO),
-                                },
-                                child: Icon(Icons
-                                    .manage_search_outlined), //btnTampilSemua
-                                style: TextButton.styleFrom(
-                                  primary: AppColor.primaryExtraSoft,
+                              Container(
+                                height: 42,
+                                child: ElevatedButton(
+                                  onPressed: () => {
+                                    tglPencarian = "",
+                                    Get.toNamed(Routes.ALL_TODO),
+                                  },
+                                  child: Icon(Icons
+                                      .manage_search_outlined), //btnTampilSemua
+                                  style: TextButton.styleFrom(
+                                    primary: AppColor.primaryExtraSoft,
+                                  ),
                                 ),
                               ),
                             ],
                           ),
-                          SizedBox(height: 20),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              Text(
-                                "Data Monitoring",
-                                style: TextStyle(
-                                  fontFamily: "poppins",
-                                  fontWeight: FontWeight.w600,
-                                  fontSize: 16,
-                                ),
-                              ),
-                            ],
-                          ),
+                          //SizedBox(height: 20),
                         ],
                       ),
                     ),
@@ -259,8 +273,10 @@ class HomeView extends GetView<HomeController> {
                                         Routes.DETAIL_TODO,
                                         arguments: {
                                           "id": "${todoData["task_id"]}",
+                                          "jam_awal": "${todoData["jam_awal"]}",
                                           "tanggal": "${todoData["tanggal"]}",
                                           "waktu": "${todoData["waktu"]}",
+                                          "no_surat": "${todoData["no_surat"]}",
                                           "nama_dudi":
                                               "${todoData["nama_dudi"]}",
                                           "alamat_dudi":
@@ -296,8 +312,10 @@ class HomeView extends GetView<HomeController> {
                                           Row(
                                             children: [
                                               Image.network(
-                                                  "${todoData["foto"]}",
-                                                  height: 100),
+                                                "${todoData["foto"]}",
+                                                height: 100,
+                                                width: 80,
+                                              ),
                                               SizedBox(width: 10),
                                               Column(
                                                 crossAxisAlignment:
@@ -313,11 +331,15 @@ class HomeView extends GetView<HomeController> {
                                                         fontWeight:
                                                             FontWeight.bold),
                                                   ),
+                                                  SizedBox(
+                                                      height: 6), //jarak teks
                                                   Text(
                                                     "${todoData["tanggal"]}",
                                                     style:
                                                         TextStyle(fontSize: 12),
                                                   ),
+                                                  SizedBox(
+                                                      height: 6), //jarak teks
                                                   SizedBox(
                                                     width: 220.0,
                                                     child: Text(

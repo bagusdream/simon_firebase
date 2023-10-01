@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_crud_firebase/app/modules/home/views/home_view.dart';
 import 'package:flutter_crud_firebase/app/routes/app_pages.dart';
 import 'package:flutter_crud_firebase/app/utils/app_color.dart';
+import 'package:flutter_crud_firebase/app/widgets/custom_toast.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 import 'package:get/get.dart';
@@ -75,8 +76,10 @@ class AllTodoView extends GetView<AllTodoController> {
                             Routes.DETAIL_TODO,
                             arguments: {
                               "id": "${todoData["task_id"]}",
+                              "jam_awal": "${todoData["jam_awal"]}",
                               "tanggal": "${todoData["tanggal"]}",
                               "waktu": "${todoData["waktu"]}",
+                              "no_surat": "${todoData["no_surat"]}",
                               "nama_dudi": "${todoData["nama_dudi"]}",
                               "alamat_dudi": "${todoData["alamat_dudi"]}",
                               "jml_siswa": "${todoData["jml_siswa"]}",
@@ -161,7 +164,11 @@ class AllTodoView extends GetView<AllTodoController> {
         // onPressed: () {
         //   Get.toNamed(Routes.PDF);
         // },
-        onPressed: () => controller.cetakPdf(),
+        onPressed: () => {
+          CustomToast.successToast(
+              'Success', 'Mohon ditunggu, proses pembuatan laporan PDF'),
+          controller.cetakPdf()
+        },
         child: Icon(Icons.print, color: Colors.white),
         backgroundColor: Colors.red,
       ),

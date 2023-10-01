@@ -52,7 +52,7 @@ class AddTodoView extends GetView<AddTodoController> {
           CustomInput(
             controller: controller.jamAwalC,
             label: 'Jam Awal Monitoring',
-            hint: '10:10',
+            hint: 'Jam Awal Monitoring',
             isTime: true,
           ),
           CustomInput(
@@ -60,6 +60,11 @@ class AddTodoView extends GetView<AddTodoController> {
             label: 'Waktu',
             hint: 'Lama Waktu Monitoring (Menit)',
             isNumber: true,
+          ),
+          CustomInput(
+            controller: controller.no_SuratC,
+            label: 'Nomor Surat Tugas',
+            hint: 'Masukkan Nomor Surat Tugas',
           ),
           CustomInput(
             controller: controller.nama_dudiC,
@@ -81,6 +86,7 @@ class AddTodoView extends GetView<AddTodoController> {
             controller: controller.kegiatanC,
             label: 'Kegiatan',
             hint: 'Kegiatan Monitoring Dudi',
+            maxLine: 5,
           ),
           CustomInput(
             controller: controller.keteranganC,

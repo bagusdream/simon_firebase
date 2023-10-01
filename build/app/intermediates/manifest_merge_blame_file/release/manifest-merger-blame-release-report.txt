@@ -1,0 +1,283 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.smkn9malang.flutter_crud_firebase"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\android\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\android\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\android\app\src\main\AndroidManifest.xml:2:5-3:49
+11-->C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\android\app\src\main\AndroidManifest.xml:3:5-47
+12    <uses-permission android:name="android.permission.CAMERA" />
+12-->[:camera_android] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\build\camera_android\intermediates\merged_manifest\release\AndroidManifest.xml:9:5-65
+12-->[:camera_android] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\build\camera_android\intermediates\merged_manifest\release\AndroidManifest.xml:9:22-62
+13    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+13-->[:camera_android] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\build\camera_android\intermediates\merged_manifest\release\AndroidManifest.xml:10:5-71
+13-->[:camera_android] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\build\camera_android\intermediates\merged_manifest\release\AndroidManifest.xml:10:22-68
+14    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+14-->[:file_picker] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\build\file_picker\intermediates\merged_manifest\release\AndroidManifest.xml:9:5-80
+14-->[:file_picker] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\build\file_picker\intermediates\merged_manifest\release\AndroidManifest.xml:9:22-77
+15
+16    <queries>
+16-->[:file_picker] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\build\file_picker\intermediates\merged_manifest\release\AndroidManifest.xml:11:5-17:15
+17        <intent>
+17-->[:file_picker] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\build\file_picker\intermediates\merged_manifest\release\AndroidManifest.xml:12:9-16:18
+18            <action android:name="android.intent.action.GET_CONTENT" />
+18-->[:file_picker] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\build\file_picker\intermediates\merged_manifest\release\AndroidManifest.xml:13:13-72
+18-->[:file_picker] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\build\file_picker\intermediates\merged_manifest\release\AndroidManifest.xml:13:21-69
+19
+20            <data android:mimeType="*/*" />
+20-->[:file_picker] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\build\file_picker\intermediates\merged_manifest\release\AndroidManifest.xml:15:13-44
+20-->[:file_picker] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\build\file_picker\intermediates\merged_manifest\release\AndroidManifest.xml:15:19-41
+21        </intent>
+22    </queries>
+23
+24    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+24-->[com.google.firebase:firebase-auth:22.1.1] C:\Users\SkanawaRPL\.gradle\caches\transforms-3\cee3cf3ba75e91d924cf662095a78242\transformed\jetified-firebase-auth-22.1.1\AndroidManifest.xml:26:5-79
+24-->[com.google.firebase:firebase-auth:22.1.1] C:\Users\SkanawaRPL\.gradle\caches\transforms-3\cee3cf3ba75e91d924cf662095a78242\transformed\jetified-firebase-auth-22.1.1\AndroidManifest.xml:26:22-76
+25
+26    <application
+27        android:name="io.flutter.app.FlutterMultiDexApplication"
+27-->C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\android\app\src\main\AndroidManifest.xml:7:9-42
+28        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+28-->[androidx.core:core:1.6.0] C:\Users\SkanawaRPL\.gradle\caches\transforms-3\7e9df2ac2213a6bd3cef0f2f27870d79\transformed\core-1.6.0\AndroidManifest.xml:24:18-86
+29        android:icon="@mipmap/ic_launcher"
+29-->C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\android\app\src\main\AndroidManifest.xml:8:9-43
+30        android:label="SiMon PKL" >
+30-->C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\android\app\src\main\AndroidManifest.xml:6:9-34
+31        <activity
+31-->C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\android\app\src\main\AndroidManifest.xml:9:9-29:20
+32            android:name="com.example.flutter_crud_firebase.MainActivity"
+32-->C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\android\app\src\main\AndroidManifest.xml:10:13-41
+33            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+33-->C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\android\app\src\main\AndroidManifest.xml:14:13-163
+34            android:exported="true"
+34-->C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\android\app\src\main\AndroidManifest.xml:11:13-36
+35            android:hardwareAccelerated="true"
+35-->C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\android\app\src\main\AndroidManifest.xml:15:13-47
+36            android:launchMode="singleTop"
+36-->C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\android\app\src\main\AndroidManifest.xml:12:13-43
+37            android:theme="@style/LaunchTheme"
+37-->C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\android\app\src\main\AndroidManifest.xml:13:13-47
+38            android:windowSoftInputMode="adjustResize" >
+38-->C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\android\app\src\main\AndroidManifest.xml:16:13-55
+39
+40            <!--
+41                 Specifies an Android theme to apply to this Activity as soon as
+42                 the Android process has started. This theme is visible to the user
+43                 while the Flutter UI initializes. After that, this theme continues
+44                 to determine the Window background behind the Flutter UI.
+45            -->
+46            <meta-data
+46-->C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\android\app\src\main\AndroidManifest.xml:21:13-24:17
+47                android:name="io.flutter.embedding.android.NormalTheme"
+47-->C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\android\app\src\main\AndroidManifest.xml:22:15-70
+48                android:resource="@style/NormalTheme" />
+48-->C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\android\app\src\main\AndroidManifest.xml:23:15-52
+49
+50            <intent-filter>
+50-->C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\android\app\src\main\AndroidManifest.xml:25:13-28:29
+51                <action android:name="android.intent.action.MAIN" />
+51-->C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\android\app\src\main\AndroidManifest.xml:26:17-68
+51-->C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\android\app\src\main\AndroidManifest.xml:26:25-66
+52
+53                <category android:name="android.intent.category.LAUNCHER" />
+53-->C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\android\app\src\main\AndroidManifest.xml:27:17-76
+53-->C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\android\app\src\main\AndroidManifest.xml:27:27-74
+54            </intent-filter>
+55        </activity>
+56        <!--
+57             Don't delete the meta-data below.
+58             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+59        -->
+60        <meta-data
+60-->C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\android\app\src\main\AndroidManifest.xml:32:9-34:33
+61            android:name="flutterEmbedding"
+61-->C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\android\app\src\main\AndroidManifest.xml:33:13-44
+62            android:value="2" />
+62-->C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\android\app\src\main\AndroidManifest.xml:34:13-30
+63
+64        <service
+64-->[:firebase_auth] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\build\firebase_auth\intermediates\merged_manifest\release\AndroidManifest.xml:10:9-14:19
+65            android:name="com.google.firebase.components.ComponentDiscoveryService"
+65-->[:firebase_auth] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\build\firebase_auth\intermediates\merged_manifest\release\AndroidManifest.xml:10:18-89
+66            android:directBootAware="true"
+66-->[com.google.firebase:firebase-common:20.3.3] C:\Users\SkanawaRPL\.gradle\caches\transforms-3\6f9fa5902813f78de2aefcdfcdb180f7\transformed\jetified-firebase-common-20.3.3\AndroidManifest.xml:34:13-43
+67            android:exported="false" >
+67-->[com.google.firebase:firebase-auth:22.1.1] C:\Users\SkanawaRPL\.gradle\caches\transforms-3\cee3cf3ba75e91d924cf662095a78242\transformed\jetified-firebase-auth-22.1.1\AndroidManifest.xml:68:13-37
+68            <meta-data
+68-->[:firebase_auth] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\build\firebase_auth\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-13:85
+69                android:name="com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar"
+69-->[:firebase_auth] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\build\firebase_auth\intermediates\merged_manifest\release\AndroidManifest.xml:12:17-124
+70                android:value="com.google.firebase.components.ComponentRegistrar" />
+70-->[:firebase_auth] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\build\firebase_auth\intermediates\merged_manifest\release\AndroidManifest.xml:13:17-82
+71            <meta-data
+71-->[:firebase_storage] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\build\firebase_storage\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-13:85
+72                android:name="com.google.firebase.components:io.flutter.plugins.firebase.storage.FlutterFirebaseAppRegistrar"
+72-->[:firebase_storage] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\build\firebase_storage\intermediates\merged_manifest\release\AndroidManifest.xml:12:17-126
+73                android:value="com.google.firebase.components.ComponentRegistrar" />
+73-->[:firebase_storage] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\build\firebase_storage\intermediates\merged_manifest\release\AndroidManifest.xml:13:17-82
+74            <meta-data
+74-->[:cloud_firestore] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\build\cloud_firestore\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-13:85
+75                android:name="com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar"
+75-->[:cloud_firestore] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\build\cloud_firestore\intermediates\merged_manifest\release\AndroidManifest.xml:12:17-134
+76                android:value="com.google.firebase.components.ComponentRegistrar" />
+76-->[:cloud_firestore] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\build\cloud_firestore\intermediates\merged_manifest\release\AndroidManifest.xml:13:17-82
+77            <meta-data
+77-->[:firebase_core] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\build\firebase_core\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-13:85
+78                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+78-->[:firebase_core] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\build\firebase_core\intermediates\merged_manifest\release\AndroidManifest.xml:12:17-124
+79                android:value="com.google.firebase.components.ComponentRegistrar" />
+79-->[:firebase_core] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\build\firebase_core\intermediates\merged_manifest\release\AndroidManifest.xml:13:17-82
+80            <meta-data
+80-->[com.google.firebase:firebase-auth:22.1.1] C:\Users\SkanawaRPL\.gradle\caches\transforms-3\cee3cf3ba75e91d924cf662095a78242\transformed\jetified-firebase-auth-22.1.1\AndroidManifest.xml:69:13-71:85
+81                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+81-->[com.google.firebase:firebase-auth:22.1.1] C:\Users\SkanawaRPL\.gradle\caches\transforms-3\cee3cf3ba75e91d924cf662095a78242\transformed\jetified-firebase-auth-22.1.1\AndroidManifest.xml:70:17-109
+82                android:value="com.google.firebase.components.ComponentRegistrar" />
+82-->[com.google.firebase:firebase-auth:22.1.1] C:\Users\SkanawaRPL\.gradle\caches\transforms-3\cee3cf3ba75e91d924cf662095a78242\transformed\jetified-firebase-auth-22.1.1\AndroidManifest.xml:71:17-82
+83            <meta-data
+83-->[com.google.firebase:firebase-firestore:24.7.1] C:\Users\SkanawaRPL\.gradle\caches\transforms-3\5a7f2f8e67e085ff5ceb2e332280dbf1\transformed\jetified-firebase-firestore-24.7.1\AndroidManifest.xml:17:13-19:85
+84                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+84-->[com.google.firebase:firebase-firestore:24.7.1] C:\Users\SkanawaRPL\.gradle\caches\transforms-3\5a7f2f8e67e085ff5ceb2e332280dbf1\transformed\jetified-firebase-firestore-24.7.1\AndroidManifest.xml:18:17-111
+85                android:value="com.google.firebase.components.ComponentRegistrar" />
+85-->[com.google.firebase:firebase-firestore:24.7.1] C:\Users\SkanawaRPL\.gradle\caches\transforms-3\5a7f2f8e67e085ff5ceb2e332280dbf1\transformed\jetified-firebase-firestore-24.7.1\AndroidManifest.xml:19:17-82
+86            <meta-data
+86-->[com.google.firebase:firebase-storage:20.2.1] C:\Users\SkanawaRPL\.gradle\caches\transforms-3\48401fbb896ab8a6384fcb26fc783a9e\transformed\jetified-firebase-storage-20.2.1\AndroidManifest.xml:32:13-34:85
+87                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+87-->[com.google.firebase:firebase-storage:20.2.1] C:\Users\SkanawaRPL\.gradle\caches\transforms-3\48401fbb896ab8a6384fcb26fc783a9e\transformed\jetified-firebase-storage-20.2.1\AndroidManifest.xml:33:17-107
+88                android:value="com.google.firebase.components.ComponentRegistrar" />
+88-->[com.google.firebase:firebase-storage:20.2.1] C:\Users\SkanawaRPL\.gradle\caches\transforms-3\48401fbb896ab8a6384fcb26fc783a9e\transformed\jetified-firebase-storage-20.2.1\AndroidManifest.xml:34:17-82
+89        </service>
+90
+91        <provider
+91-->[:printing] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\build\printing\intermediates\merged_manifest\release\AndroidManifest.xml:10:9-18:20
+92            android:name="net.nfet.flutter.printing.PrintFileProvider"
+92-->[:printing] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\build\printing\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-71
+93            android:authorities="com.smkn9malang.flutter_crud_firebase.flutter.printing"
+93-->[:printing] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\build\printing\intermediates\merged_manifest\release\AndroidManifest.xml:12:13-68
+94            android:exported="false"
+94-->[:printing] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\build\printing\intermediates\merged_manifest\release\AndroidManifest.xml:13:13-37
+95            android:grantUriPermissions="true" >
+95-->[:printing] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\build\printing\intermediates\merged_manifest\release\AndroidManifest.xml:14:13-47
+96            <meta-data
+96-->[:printing] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\build\printing\intermediates\merged_manifest\release\AndroidManifest.xml:15:13-17:71
+97                android:name="android.support.FILE_PROVIDER_PATHS"
+97-->[:printing] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\build\printing\intermediates\merged_manifest\release\AndroidManifest.xml:16:17-67
+98                android:resource="@xml/flutter_printing_file_paths" />
+98-->[:printing] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\build\printing\intermediates\merged_manifest\release\AndroidManifest.xml:17:17-68
+99        </provider>
+100
+101        <activity
+101-->[com.google.firebase:firebase-auth:22.1.1] C:\Users\SkanawaRPL\.gradle\caches\transforms-3\cee3cf3ba75e91d924cf662095a78242\transformed\jetified-firebase-auth-22.1.1\AndroidManifest.xml:29:9-46:20
+102            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+102-->[com.google.firebase:firebase-auth:22.1.1] C:\Users\SkanawaRPL\.gradle\caches\transforms-3\cee3cf3ba75e91d924cf662095a78242\transformed\jetified-firebase-auth-22.1.1\AndroidManifest.xml:30:13-80
+103            android:excludeFromRecents="true"
+103-->[com.google.firebase:firebase-auth:22.1.1] C:\Users\SkanawaRPL\.gradle\caches\transforms-3\cee3cf3ba75e91d924cf662095a78242\transformed\jetified-firebase-auth-22.1.1\AndroidManifest.xml:31:13-46
+104            android:exported="true"
+104-->[com.google.firebase:firebase-auth:22.1.1] C:\Users\SkanawaRPL\.gradle\caches\transforms-3\cee3cf3ba75e91d924cf662095a78242\transformed\jetified-firebase-auth-22.1.1\AndroidManifest.xml:32:13-36
+105            android:launchMode="singleTask"
+105-->[com.google.firebase:firebase-auth:22.1.1] C:\Users\SkanawaRPL\.gradle\caches\transforms-3\cee3cf3ba75e91d924cf662095a78242\transformed\jetified-firebase-auth-22.1.1\AndroidManifest.xml:33:13-44
+106            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+106-->[com.google.firebase:firebase-auth:22.1.1] C:\Users\SkanawaRPL\.gradle\caches\transforms-3\cee3cf3ba75e91d924cf662095a78242\transformed\jetified-firebase-auth-22.1.1\AndroidManifest.xml:34:13-72
+107            <intent-filter>
+107-->[com.google.firebase:firebase-auth:22.1.1] C:\Users\SkanawaRPL\.gradle\caches\transforms-3\cee3cf3ba75e91d924cf662095a78242\transformed\jetified-firebase-auth-22.1.1\AndroidManifest.xml:35:13-45:29
+108                <action android:name="android.intent.action.VIEW" />
+108-->[com.google.firebase:firebase-auth:22.1.1] C:\Users\SkanawaRPL\.gradle\caches\transforms-3\cee3cf3ba75e91d924cf662095a78242\transformed\jetified-firebase-auth-22.1.1\AndroidManifest.xml:36:17-69
+108-->[com.google.firebase:firebase-auth:22.1.1] C:\Users\SkanawaRPL\.gradle\caches\transforms-3\cee3cf3ba75e91d924cf662095a78242\transformed\jetified-firebase-auth-22.1.1\AndroidManifest.xml:36:25-66
+109
+110                <category android:name="android.intent.category.DEFAULT" />
+110-->[com.google.firebase:firebase-auth:22.1.1] C:\Users\SkanawaRPL\.gradle\caches\transforms-3\cee3cf3ba75e91d924cf662095a78242\transformed\jetified-firebase-auth-22.1.1\AndroidManifest.xml:38:17-76
+110-->[com.google.firebase:firebase-auth:22.1.1] C:\Users\SkanawaRPL\.gradle\caches\transforms-3\cee3cf3ba75e91d924cf662095a78242\transformed\jetified-firebase-auth-22.1.1\AndroidManifest.xml:38:27-73
+111                <category android:name="android.intent.category.BROWSABLE" />
+111-->[com.google.firebase:firebase-auth:22.1.1] C:\Users\SkanawaRPL\.gradle\caches\transforms-3\cee3cf3ba75e91d924cf662095a78242\transformed\jetified-firebase-auth-22.1.1\AndroidManifest.xml:39:17-78
+111-->[com.google.firebase:firebase-auth:22.1.1] C:\Users\SkanawaRPL\.gradle\caches\transforms-3\cee3cf3ba75e91d924cf662095a78242\transformed\jetified-firebase-auth-22.1.1\AndroidManifest.xml:39:27-75
+112
+113                <data
+113-->[:file_picker] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\build\file_picker\intermediates\merged_manifest\release\AndroidManifest.xml:15:13-44
+114                    android:host="firebase.auth"
+115                    android:path="/"
+116                    android:scheme="genericidp" />
+117            </intent-filter>
+118        </activity>
+119        <activity
+119-->[com.google.firebase:firebase-auth:22.1.1] C:\Users\SkanawaRPL\.gradle\caches\transforms-3\cee3cf3ba75e91d924cf662095a78242\transformed\jetified-firebase-auth-22.1.1\AndroidManifest.xml:47:9-64:20
+120            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+120-->[com.google.firebase:firebase-auth:22.1.1] C:\Users\SkanawaRPL\.gradle\caches\transforms-3\cee3cf3ba75e91d924cf662095a78242\transformed\jetified-firebase-auth-22.1.1\AndroidManifest.xml:48:13-79
+121            android:excludeFromRecents="true"
+121-->[com.google.firebase:firebase-auth:22.1.1] C:\Users\SkanawaRPL\.gradle\caches\transforms-3\cee3cf3ba75e91d924cf662095a78242\transformed\jetified-firebase-auth-22.1.1\AndroidManifest.xml:49:13-46
+122            android:exported="true"
+122-->[com.google.firebase:firebase-auth:22.1.1] C:\Users\SkanawaRPL\.gradle\caches\transforms-3\cee3cf3ba75e91d924cf662095a78242\transformed\jetified-firebase-auth-22.1.1\AndroidManifest.xml:50:13-36
+123            android:launchMode="singleTask"
+123-->[com.google.firebase:firebase-auth:22.1.1] C:\Users\SkanawaRPL\.gradle\caches\transforms-3\cee3cf3ba75e91d924cf662095a78242\transformed\jetified-firebase-auth-22.1.1\AndroidManifest.xml:51:13-44
+124            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+124-->[com.google.firebase:firebase-auth:22.1.1] C:\Users\SkanawaRPL\.gradle\caches\transforms-3\cee3cf3ba75e91d924cf662095a78242\transformed\jetified-firebase-auth-22.1.1\AndroidManifest.xml:52:13-72
+125            <intent-filter>
+125-->[com.google.firebase:firebase-auth:22.1.1] C:\Users\SkanawaRPL\.gradle\caches\transforms-3\cee3cf3ba75e91d924cf662095a78242\transformed\jetified-firebase-auth-22.1.1\AndroidManifest.xml:53:13-63:29
+126                <action android:name="android.intent.action.VIEW" />
+126-->[com.google.firebase:firebase-auth:22.1.1] C:\Users\SkanawaRPL\.gradle\caches\transforms-3\cee3cf3ba75e91d924cf662095a78242\transformed\jetified-firebase-auth-22.1.1\AndroidManifest.xml:36:17-69
+126-->[com.google.firebase:firebase-auth:22.1.1] C:\Users\SkanawaRPL\.gradle\caches\transforms-3\cee3cf3ba75e91d924cf662095a78242\transformed\jetified-firebase-auth-22.1.1\AndroidManifest.xml:36:25-66
+127
+128                <category android:name="android.intent.category.DEFAULT" />
+128-->[com.google.firebase:firebase-auth:22.1.1] C:\Users\SkanawaRPL\.gradle\caches\transforms-3\cee3cf3ba75e91d924cf662095a78242\transformed\jetified-firebase-auth-22.1.1\AndroidManifest.xml:38:17-76
+128-->[com.google.firebase:firebase-auth:22.1.1] C:\Users\SkanawaRPL\.gradle\caches\transforms-3\cee3cf3ba75e91d924cf662095a78242\transformed\jetified-firebase-auth-22.1.1\AndroidManifest.xml:38:27-73
+129                <category android:name="android.intent.category.BROWSABLE" />
+129-->[com.google.firebase:firebase-auth:22.1.1] C:\Users\SkanawaRPL\.gradle\caches\transforms-3\cee3cf3ba75e91d924cf662095a78242\transformed\jetified-firebase-auth-22.1.1\AndroidManifest.xml:39:17-78
+129-->[com.google.firebase:firebase-auth:22.1.1] C:\Users\SkanawaRPL\.gradle\caches\transforms-3\cee3cf3ba75e91d924cf662095a78242\transformed\jetified-firebase-auth-22.1.1\AndroidManifest.xml:39:27-75
+130
+131                <data
+131-->[:file_picker] C:\Users\SkanawaRPL\Documents\bagus\belajar_flutter\simon_firebase\build\file_picker\intermediates\merged_manifest\release\AndroidManifest.xml:15:13-44
+132                    android:host="firebase.auth"
+133                    android:path="/"
+134                    android:scheme="recaptcha" />
+135            </intent-filter>
+136        </activity>
+137
+138        <uses-library
+138-->[androidx.window:window:1.0.0-beta04] C:\Users\SkanawaRPL\.gradle\caches\transforms-3\25cee5f028ac2a6b79fd6278ff5b59e2\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+139            android:name="androidx.window.extensions"
+139-->[androidx.window:window:1.0.0-beta04] C:\Users\SkanawaRPL\.gradle\caches\transforms-3\25cee5f028ac2a6b79fd6278ff5b59e2\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+140            android:required="false" />
+140-->[androidx.window:window:1.0.0-beta04] C:\Users\SkanawaRPL\.gradle\caches\transforms-3\25cee5f028ac2a6b79fd6278ff5b59e2\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+141        <uses-library
+141-->[androidx.window:window:1.0.0-beta04] C:\Users\SkanawaRPL\.gradle\caches\transforms-3\25cee5f028ac2a6b79fd6278ff5b59e2\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+142            android:name="androidx.window.sidecar"
+142-->[androidx.window:window:1.0.0-beta04] C:\Users\SkanawaRPL\.gradle\caches\transforms-3\25cee5f028ac2a6b79fd6278ff5b59e2\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
+143            android:required="false" />
+143-->[androidx.window:window:1.0.0-beta04] C:\Users\SkanawaRPL\.gradle\caches\transforms-3\25cee5f028ac2a6b79fd6278ff5b59e2\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+144
+145        <provider
+145-->[com.google.firebase:firebase-common:20.3.3] C:\Users\SkanawaRPL\.gradle\caches\transforms-3\6f9fa5902813f78de2aefcdfcdb180f7\transformed\jetified-firebase-common-20.3.3\AndroidManifest.xml:25:9-30:39
+146            android:name="com.google.firebase.provider.FirebaseInitProvider"
+146-->[com.google.firebase:firebase-common:20.3.3] C:\Users\SkanawaRPL\.gradle\caches\transforms-3\6f9fa5902813f78de2aefcdfcdb180f7\transformed\jetified-firebase-common-20.3.3\AndroidManifest.xml:26:13-77
+147            android:authorities="com.smkn9malang.flutter_crud_firebase.firebaseinitprovider"
+147-->[com.google.firebase:firebase-common:20.3.3] C:\Users\SkanawaRPL\.gradle\caches\transforms-3\6f9fa5902813f78de2aefcdfcdb180f7\transformed\jetified-firebase-common-20.3.3\AndroidManifest.xml:27:13-72
+148            android:directBootAware="true"
+148-->[com.google.firebase:firebase-common:20.3.3] C:\Users\SkanawaRPL\.gradle\caches\transforms-3\6f9fa5902813f78de2aefcdfcdb180f7\transformed\jetified-firebase-common-20.3.3\AndroidManifest.xml:28:13-43
+149            android:exported="false"
+149-->[com.google.firebase:firebase-common:20.3.3] C:\Users\SkanawaRPL\.gradle\caches\transforms-3\6f9fa5902813f78de2aefcdfcdb180f7\transformed\jetified-firebase-common-20.3.3\AndroidManifest.xml:29:13-37
+150            android:initOrder="100" />
+150-->[com.google.firebase:firebase-common:20.3.3] C:\Users\SkanawaRPL\.gradle\caches\transforms-3\6f9fa5902813f78de2aefcdfcdb180f7\transformed\jetified-firebase-common-20.3.3\AndroidManifest.xml:30:13-36
+151
+152        <activity
+152-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\SkanawaRPL\.gradle\caches\transforms-3\aba8f806953ea3dd8f794da3aeb78a12\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+153            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+153-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\SkanawaRPL\.gradle\caches\transforms-3\aba8f806953ea3dd8f794da3aeb78a12\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+154            android:exported="false"
+154-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\SkanawaRPL\.gradle\caches\transforms-3\aba8f806953ea3dd8f794da3aeb78a12\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+155            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+155-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\SkanawaRPL\.gradle\caches\transforms-3\aba8f806953ea3dd8f794da3aeb78a12\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+156
+157        <meta-data
+157-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\SkanawaRPL\.gradle\caches\transforms-3\58aa1384bde170d075503b845cfcf44c\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+158            android:name="com.google.android.gms.version"
+158-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\SkanawaRPL\.gradle\caches\transforms-3\58aa1384bde170d075503b845cfcf44c\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
+159            android:value="@integer/google_play_services_version" />
+159-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\SkanawaRPL\.gradle\caches\transforms-3\58aa1384bde170d075503b845cfcf44c\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+160    </application>
+161
+162</manifest>

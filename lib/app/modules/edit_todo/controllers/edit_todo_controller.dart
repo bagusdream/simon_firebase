@@ -7,6 +7,7 @@ import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_crud_firebase/app/modules/add_todo/views/camera_view.dart';
 import 'package:get/get.dart';
+import 'package:intl/intl.dart';
 
 import '../../../widgets/custom_toast.dart';
 
@@ -23,7 +24,9 @@ class EditTodoController extends GetxController {
   File? file;
 
   TextEditingController tanggalC = TextEditingController();
+  TextEditingController jam_awalC = TextEditingController();
   TextEditingController waktuC = TextEditingController();
+  TextEditingController no_suratC = TextEditingController();
   TextEditingController nama_dudiC = TextEditingController();
   TextEditingController alamat_dudiC = TextEditingController();
   TextEditingController jml_siswaC = TextEditingController();
@@ -43,7 +46,9 @@ class EditTodoController extends GetxController {
     super.onInit();
 
     tanggalC.text = argsData["tanggal"];
+    jam_awalC.text = argsData["jam_awal"];
     waktuC.text = argsData["waktu"];
+    no_suratC.text = argsData["no_surat"];
     nama_dudiC.text = argsData["nama_dudi"];
     alamat_dudiC.text = argsData["alamat_dudi"];
     jml_siswaC.text = argsData["jml_siswa"];
@@ -107,6 +112,8 @@ class EditTodoController extends GetxController {
       CollectionReference<Map<String, dynamic>> childrenCollection =
           await firestore.collection("users").doc(uid).collection("todos");
 
+      var dates = DateFormat('yyyy-MM-dd').format(DateTime.now());
+
       DocumentReference todo = await firestore
           .collection("users")
           .doc(uid)
@@ -116,7 +123,12 @@ class EditTodoController extends GetxController {
       if (file == null) {
         await childrenCollection.doc(argsData["id"]).update({
           "tanggal": tanggalC.text,
+          "jam_awal": jam_awalC.text,
+          "jam_akhir": DateFormat('hh:mm').format(
+              DateTime.parse("$dates ${jam_awalC.text}")
+                  .add(Duration(minutes: int.parse(waktuC.text)))),
           "waktu": waktuC.text,
+          "no_surat": no_suratC.text,
           "nama_dudi": nama_dudiC.text,
           "alamat_dudi": alamat_dudiC.text,
           "jml_siswa": jml_siswaC.text,
@@ -135,7 +147,12 @@ class EditTodoController extends GetxController {
 
         await childrenCollection.doc(argsData["id"]).update({
           "tanggal": tanggalC.text,
+          "jam_awal": jam_awalC.text,
+          "jam_akhir": DateFormat('hh:mm').format(
+              DateTime.parse("$dates ${jam_awalC.text}")
+                  .add(Duration(minutes: int.parse(waktuC.text)))),
           "waktu": waktuC.text,
+          "no_surat": no_suratC.text,
           "nama_dudi": nama_dudiC.text,
           "alamat_dudi": alamat_dudiC.text,
           "jml_siswa": jml_siswaC.text,

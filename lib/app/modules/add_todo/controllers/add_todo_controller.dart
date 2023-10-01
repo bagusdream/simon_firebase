@@ -31,6 +31,7 @@ class AddTodoController extends GetxController {
   TextEditingController tanggalC = TextEditingController();
   TextEditingController jamAwalC = TextEditingController();
   TextEditingController waktuC = TextEditingController();
+  TextEditingController no_SuratC = TextEditingController();
   TextEditingController nama_dudiC = TextEditingController();
   TextEditingController alamat_dudiC = TextEditingController();
   TextEditingController jml_siswaC = TextEditingController();
@@ -138,6 +139,7 @@ class AddTodoController extends GetxController {
                 .add(Duration(minutes: int.parse(waktuC.text)))),
         // "jam_akhir": DateFormat('hh:mm').format(
         //     DateTime.now().add(Duration(minutes: int.parse(waktuC.text)))),
+        "no_surat": no_SuratC.text,
         "nama_dudi": nama_dudiC.text,
         "alamat_dudi": alamat_dudiC.text,
         "jml_siswa": jml_siswaC.text,

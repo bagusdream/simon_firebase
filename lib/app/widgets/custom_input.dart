@@ -15,6 +15,7 @@ class CustomInput extends StatefulWidget {
   final bool isTime;
   final bool isNumber;
   final bool isClickEmpty;
+  final int maxLine;
   CustomInput({
     required this.controller,
     required this.label,
@@ -27,6 +28,7 @@ class CustomInput extends StatefulWidget {
     this.suffixIcon,
     this.isNumber = false,
     this.isClickEmpty = false,
+    this.maxLine = 1,
   });
 
   @override
@@ -41,7 +43,7 @@ class _CustomInputState extends State<CustomInput> {
       color: Colors.white,
       child: Container(
         width: MediaQuery.of(context).size.width,
-        padding: EdgeInsets.only(left: 14, right: 14, top: 4),
+        padding: EdgeInsets.only(left: 14, top: 4),
         margin: widget.margin,
         decoration: BoxDecoration(
           color: (widget.disabled == false)
@@ -54,7 +56,7 @@ class _CustomInputState extends State<CustomInput> {
           readOnly: widget.disabled,
           obscureText: widget.obsecureText,
           style: TextStyle(fontSize: 14, fontFamily: 'poppins'),
-          maxLines: 1,
+          maxLines: widget.maxLine,
           controller: widget.controller,
           keyboardType:
               widget.isNumber ? TextInputType.number : TextInputType.text,
